@@ -147,7 +147,7 @@ const store = {
   </form> 
   <p> Score: ${store.score} </p>
   <div>
- `
+ `;
 
   }
 
