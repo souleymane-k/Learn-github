@@ -1,0 +1,191 @@
+/*...............this section  represent the header color and others values....*/
+header, footer {
+    background-color: #30281D;
+    margin-bottom: 40px;
+    display: block;
+  }
+  
+/* the value of the body */
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+/*.......................Navigation..................................... */
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+header nav ul {
+display: flex;
+flex-direction: row;
+padding-bottom: 0;
+
+}
+header nav ul li{
+  list-style-type: none;
+}
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+header nav ul li:last-child a {
+  margin-right:10px;
+}
+
+/* ............@media Query...........................*/
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+/* .................H Tag..................................*/
+h1{
+  color: #eff0e5;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  /*font-family: 'Nanum Pen Script', cursive;*/
+  font-family: sens-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 2opx;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3{
+    font-size: 20px;
+    font-family: sens-serif; 
+}
+h4 {
+  font-size: 22px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+
+/*.....footer propeties and values......... */
+
+footer{
+    padding: 10px;
+    height: 80px;;
+    margin-top: 0;
+    text-align: center;
+    background-color:#30281D;
+    font-size:30px;
+    font-family: sans-serif;
+    color:white;
+}
+
+  /*......section center everyhting in the document.......*/
+  
+
+/*..........images..............*/
+img{
+    margin-top: 20px;
+    width: 400px;
+    height:300px;
+    border-radius:10%;
+}
+
+/* Groups & Items  (Mobile First) */
+.wrapper {
+    width: 100%;
+    margin:auto;
+  }
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
+/* Media Query and type  for screen grater or equal to 600px*/
+  @media all and (min-width: 800px) {
+    .wrapper {
+      width: 80%;
+      margin: auto;
+    }
+  
+    .group {
+      flex-direction: row;
+    }
+  }
+/* ARTICLE SECTIONS */
+
+#home, #contact, #about {
+    margin-bottom: 10px;
+  }
+
+  #contact{
+    background-color: #c5c0b8;
+    padding: 12px;
+  }
+  
+  /* .............ABOUT ARTICLE................*/
+  
+  #about {
+    background-color: #c5c0b8;
+    padding: 12px;
+    /*padding: 20px 0 30px 0;*/
+  }
+
+/*.........list and anchor element.........*/
+  article ol a:link{
+text-decoration: none;
+padding: 1px;
+}
+article ol a:visited{
+    color: green;
+}
+article ol a:hover{
+    color:red;
+}
+
+/* Functional contat form   */
+form {
+  padding-right: 6px;
+  width: 75%;
+}
+form input,
+form textarea{
+width: 100%;
+margin-bottom:20px;
+}
+form textarea{
+height:160px;
+}
+
+
+/* need to add pseudo code  */
