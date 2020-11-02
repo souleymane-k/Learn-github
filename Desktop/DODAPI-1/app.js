@@ -1,19 +1,47 @@
 'use strict';
-function getDogImage(){
-fetch('https://dog.ceo/api/breeds/image/random/3')
-.then(reponse => reponse.json())
-.then(responseJson => console.log(responseJson));
+
+function getDogImage() {
+  fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(reponseJson => 
+      console.log(reponseJson));
+      
+  
 }
 
-function watchForm(){
-    $('form').submit(event => {
-        event.preventableDefault();
-        getDodImage();
-    });
+function displayResults(responseJson) {
+  console.log(responseJson);
+
+
+   $('#imgView').html(
+     `
+    <img src="${responseJson.message}" class="results-img">
+     
+     `  
+   )
+
+  //display the results section
+  $('.results').removeClass('hidden');
+
 }
 
-$(function(){
- console.log('submit your 3 random requests');
- watchForm();
+/**retrutn between 1-50 */
+function watchForm() {
+  $('form').submit(event => {
+    event.preventDefault();
+     let  numberDogs = $('.enter').val();
+             $('.enter').val("");
+    if(numberDogs >=1 && numberDogs<=50){
+      console.log(getDogImage(numberDogs));
+    }else{
+     alert('Enter Number Between 1-50')
+    };
+    
+  });
+}
 
-})
+$(function() {
+  console.log('App loaded! Waiting for submit!');
+  watchForm();
+  
+});
