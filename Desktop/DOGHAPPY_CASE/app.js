@@ -1,35 +1,55 @@
 'use strict';
 
-function getDogImage() {
-  fetch('https://dog.ceo/api/breed/hound/images')
-    .then(response => response.json())
+function getDogImage(dogBreed) {
+  fetch(`https://dog.ceo/api/breed/${dogBreed}/images/random/1`)
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error(response.statusText + "-" + response.url);
+  })
     .then(reponseJson => 
       displayResults(reponseJson))
-      .catch()
+      .catch(err => {
+        $('#js-error-message').text(`Something went wrong: 404 ${err.message}`)
+      })
       
-  
+//${error.message}  
 }
-
+/**alert('Something went wrong. Try again later.') */
 function displayResults(responseJson) {
   console.log(responseJson);
-   
-  $('.results-img').replaceWith(
-    `<img src="${responseJson.message}" class="results-img">
-     `) 
-    //message.push('responseJson');   
-//});
+  $('#imgView').empty()
+  //replace the existing image with the new one
+  for (let i=0; i<responseJson.message.length; i++){
+    console.log(responseJson.message[i])
+
+   $('#imgView').append(
+     `
+    <img src="${responseJson.message[i]}" class="results-img">
+     
+     `  
+   )
+  
+  }
+
   //display the results section
   $('.results').removeClass('hidden');
- // return (responseJson.message).map(response=> displayResults(response)).join('');
 
 }
-/**Right; I think that `getDogImages` should either take in a number of dog images to show, or read the user input to decide how many dog images to show. Then it can make the `fetch` call to the API route, and call `displayResults` with the results; `displayResults` can map over the results and put each one into the DOM. */
 
-
+/**retrutn between 1-50 */
 function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
-    getDogImage();
+ 
+     let dogName = $('.enter').val();
+     $('.enter').val("");
+    if(dogName){
+      getDogImage(dogName);
+    }else{
+      alert('Enter Breed Name')
+    };
     
   });
 }

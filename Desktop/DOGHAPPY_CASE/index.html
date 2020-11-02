@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+
      <div class="container">
-
-        <h1>CHOOSE YOUR DOG</h1>
-
-        <form>
-          <input type="submit" value="choose 1 out 3 dog!">
+        <h1>CHOOSE YOUR RANDOM DOG PICTURE</h1>
+           <h2>Enter Breed Name</h2>
+        <form> 
+          <input class="enter" type="text" value="" placeholder="Breed Name?">
+          <button type="submit" class="click" >Click Here!</button>
         
         </form>
+        <h2>SEE RESULT BELLOW AFTER CLICK!</h2>
+        <p id="js-error-message" class="error-message"></p>
         <section class="results hidden">
-          <h2>Check this dog!</h2>
-          <img class="results-img" alt="placeholder">
+          
+          <div id="imgView"> </div> 
+  
         </section>
     </div> 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
