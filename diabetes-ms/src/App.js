@@ -51,13 +51,6 @@ class App extends Component {
        filterOption={this.state.filterOption}
        handleFilterChange={this.updateFilterOption}/>
 {/* <Route exact path={'/InputListItem'} component={InputListItem}/> */}
-
-      
-      {/* <InputListItem 
-      meals ={this.props.meals}
-      filterOption={this.state.filterOption}/> */}
-
-      {/* <Route path="/add-meal" component={AddResults} />  */}
       </Switch>
       <InputListItem 
       months ={this.props.months}
@@ -74,21 +67,4 @@ class App extends Component {
 export default App;
 
 
-    //  <ValidationContext.Provider value={[onlineUser, setOnlineUser]}>
-    //     <header>
-    //       <Header />
-    //     </header>
-    //     <main>
-    //         <Switch>
-    //           <Route exact path='/' component={MainPage} />
-    //           <PublicOnlyRoute path='/login' component={LoginForm} />
-    //           <PublicOnlyRoute path='/register' component={RegistrationForm} />
-    //           <PrivateOnlyRoute path='/home' component={UserHomeScreen} />
-    //           <PrivateOnlyRoute path='/addrestaurant' component={AddRestaurant} />
-    //         </Switch>
-    //     </main>
-    //     <footer>
-    //       <Footer />
-    //     </footer>
-    //   </ValidationContext.Provider>
     
