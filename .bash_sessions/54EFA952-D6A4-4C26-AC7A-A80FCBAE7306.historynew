@@ -1,0 +1,78 @@
+git --version
+ls projects
+mkdir learn-git
+mv learn-git projects/
+ls projects
+ls learn-git
+cd projects/mkdir learn-git
+cd projects/
+mkdir learn-git
+cd learn-git/touch index.html main.css
+cd learn-git/
+touch index.html main.css
+git init
+ls -a
+ls .git
+ls -a
+git status
+git add index.html
+git status
+git add main.css
+git status
+git log
+git commit
+git log
+git status
+git status
+git add -u
+git status
+git status
+git add -u
+git status
+git commit -m 'addedcontent to file'
+git log
+:q
+git status
+git status
+git diff index.html
+:q
+:q
+git diff
+git diff --stat
+git add main.css
+git commit -m'updated html and css'
+git log
+q
+:q
+git checkout <3ed2eba79d6cf601f817e2449a3944d315c46b94 >
+git checkout
+git checkout <26a19c748c999e7dd4a549a97a72b23a21df89cf>
+git log
+q
+:q
+:q
+git checkout bcfe0fd7e297df92c6a8cb773164ec974f04bf5e
+git switch -c
+git checkout master
+git checkout master
+touch foo.js bar.js
+git status
+git commit -m 'addes js files'
+git add
+git add
+git add .
+git add .
+git commit -m 
+git commit -m 'added js, updated html'
+git reset HEAD~1
+git log
+git status
+git reset HEAD~1
+git diff index.html
+git status
+git reset --hard HEAD~1
+cd
+git status
+cd
+pwd
+git branch feature/signup-form

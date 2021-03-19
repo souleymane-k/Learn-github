@@ -1,0 +1,20 @@
+ls projects
+ls learn-git
+mv learn-git projects
+git init
+git add projects
+git status
+ls projects
+ls learn-git
+mv learn-git projects/
+touch learn-git
+ls
+ls learn-git
+mv learn projects/
+ls
+ls learn-git
+ls projects
+cd
+git status
+git add lear-git ..
+git add learn-git...

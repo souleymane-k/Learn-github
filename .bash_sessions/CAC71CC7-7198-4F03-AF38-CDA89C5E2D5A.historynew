@@ -1,0 +1,134 @@
+cd~
+pwd
+pwd
+man pwd
+man pwd
+pwd
+ls
+mkdir test
+ls test
+touch test/foo.txt
+ls test
+cat test/foo.txt
+mkdir test/cats/dogs/bears
+mkdr -p test/cats/gods/bears
+mkdr -p test/cats/dogs/bears
+mkdir -p test/cats/dogs/bears
+ls test
+cd~
+ls te
+ls te lste
+ls test/
+ls te
+ls test
+ls test/
+ls test/
+ls test/
+ls test/
+/Applications/CodeBlocks.app/Contents/MacOS/cb_console_runner DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:. /Users/desolo/Documents/alpha1/bin/Debug/alpha1 cd~
+ls test/
+cd
+cd~
+cd test
+ls
+cd ..
+~/test/
+pwd
+cd est
+ls
+ls
+cd~
+pwd
+cd test
+ls
+touch .hidden-file.text
+touch .hidden-file.txt
+ls
+ls -a
+ls -a
+rm -i .hidden-file.text
+ls -a
+y ls -a
+rm -i foo.text
+rm -i .hidden-file.txt
+ls cats/dogs/
+rmdir cats/dogs/bears
+ls cats/dogs
+ls -a
+q
+pwd
+cd~
+pwd
+man pwd
+q
+"q"
+cd~
+man pwd
+pwd
+man pwd
+pwd
+cd~
+pwd
+ls
+rm -i text
+rm -i cats
+ls
+rm -i .hidden-file.txt
+rm -i foo.txt 
+ls
+rm -i cats
+ls
+rm -i dogs
+rm -i bears
+rm -i cats
+pwd
+rm -i test
+rm -i test
+rm -i cats
+rmdir -i cats
+ls
+rmdir cats
+ls cats/dogs
+rmdir cats/dogs/bears
+rmdir cats/dogs/bears ls cats/dogs
+rmdir cats
+rm -rf cats
+ls
+ls
+touch test
+ls
+touch foo.txt
+ls
+mv foo.txt bar.txt
+ls
+mkdir foo
+ls
+mv bar.txt foo
+ls foo
+mv foo bar
+ls bar
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install git
+brew install git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+ls
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew help
+git --version
+git config --global user.name "souleymane kone"
+git config --global user.email "desolo74@gmail.com"
+ls
+cp bar/bar.txt bar/bizz.txt
+ls bar
+cp bar cats
+cp -r bar cats
+ls
+ls
+cp bar cats
+cp -r bar cats
+ls
+pwd
+ls
+pwd
+ls

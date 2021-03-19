@@ -1,0 +1,51 @@
+cd document
+cd documents
+ls
+mkdir allo
+ls
+cd allo
+touch index
+ls allo
+ls
+rm index
+cd ..
+cd allo
+rmdir allo
+ls
+rmdir allo
+cd ..
+cd
+cd .
+cd allo
+rmdir allo
+ls
+cd allo
+ls allo
+cd test
+ls
+ cd allo
+rmdir allo
+ls
+cd ..
+cd desolo
+git status
+cd desolo
+cd documents
+cd users
+cd user
+chsh -s /bin/zsh
+ls
+cd ..
+cd ..
+cd test
+cd allo
+ls allo
+cd documents
+git status
+cd allo
+cd users
+cd ..
+cd allo
+cd test
+pwd
+cd test

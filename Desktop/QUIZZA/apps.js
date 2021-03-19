@@ -185,15 +185,26 @@ const store = {
 
   /***********************render-function-***********************/
   
-  function renderQuiz(){
+function renderQuiz(){
+    if(store.quizStarted === false) {
+      if(store.questionNumber === store.questions.length){
+        const quizResultsString = generateQuizResultsString();
+        $('main').html(quizResultsString); 
+      } else {
+        const quizWelcomeInterfaceString = generateFirstPageHtml();
+        $('main').html(quizWelcomeInterfaceString);
+      }
+    }else if (store.quizStarted === true) {
+      if(store.submittingAnswer === false) {
+        const quizInterfaceString = generateStartQuestionHtml(currentQuestion());
+        $('main').html(quizInterfaceString);
+      } else if (store.submittingAnswer === true) {
+        const quizAnswerResponseString = generateAnswerResults();
+        $('main').html(quizAnswerResponseString);
+      }
+    } 
 
-    const welcomePageString = generateFirstPageHtml();
-      $('main').html(welcomePageString);
-      const quizInterfaceString = firstQuestionPageHtml(currentQuestion());
-      $('main').html(quizInterfaceString)
-
-    
-    };
+  };
 
 
 

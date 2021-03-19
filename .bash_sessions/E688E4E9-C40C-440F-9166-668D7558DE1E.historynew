@@ -1,0 +1,16 @@
+cd
+git status
+ls learn-git
+ls
+cd
+pwd
+git branch -a
+ls
+git status
+learn-git
+projects
+ls projects
+cd
+git status
+git log
+git add .
