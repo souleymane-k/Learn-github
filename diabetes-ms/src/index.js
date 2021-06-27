@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
+// import { library } from '@fortawesome/fontawesome-svg-core'
 import {
-  faPlus, faChevronLeft, faTrashAlt, faCheckDouble
+  // faPlus, faChevronLeft, faTrashAlt, faCheckDouble
 } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter } from 'react-router-dom'
 // import 'typeface-roboto'
@@ -11,41 +11,9 @@ import App from './App'
 
 
 
-library.add(faPlus, faChevronLeft, faTrashAlt, faCheckDouble)
+// library.add(faPlus, faChevronLeft, faTrashAlt, faCheckDouble)
 
 
-// const MEALS =
-
-//  {
-//   "Months":[
-//    {
-//      "id": "50",
-//      "name": "January"
-//    },
-//    {
-//     "id": "51",
-//     "name": "February"
-//   },
-//   {
-//     "id": "52",
-//     "name": "March"
-//   },
-//   {
-//     "id": "53",
-//     "name": "April"
-//   }
-//   ],
-
-//   "notes": [
-//   {"id":"50", "mealName":"Breakfast","result":"115 mg/dl","date":"01-01-2021","description":" take 2hrs after breakfast. 2 bananas"},
-//   {"id":"51","mealName":"Lunch","result":"110 mg/dl","date":"01-03-2021","description":"take 2hrs after breakfast. 2 bananas"},
-//   {"mealName":"Dinner","result":"140 mg/dl","date":"01-06-2021","description":"take 2hrs after breakfast. 2 bananas"},
-//   {"mealName":"Breakfast","result":"130 mg/dl","date":"01-05-2021","description":" take 2hrs after breakfast. 2 bananas"},
-//   {"mealName":"Fasting","result":"80 mg/dl","date":"01-09-2021","description":"nothing eaten"},
-//   {"mealName":"Breakfast","result":"120 mg/dl","date":"01-10-2021","description":" take 2hrs after breakfast. 2 bananas"},
-//   {"mealName":"Fasting","result":"75 mg/dl","date":"01-12-2021","description":"nothing eaten"}
-//   ]
-// }
 
 const MONTHS = [
        {"id":"50",  "monthName":"January",  "mealName":"Breakfast","result":"115 mg/dl","date":"01/01/2021","description":" take 2hrs after breakfast. 2 bananas"},
@@ -70,11 +38,7 @@ ReactDOM.render(
     </BrowserRouter>,
      document.getElementById('root'));
 
-    //  ReactDOM.render(
-    //   <BrowserRouter>
-    //     <App meals={MEALS}/>
-    //     </BrowserRouter>,
-    //      document.getElementById('root'));
+  
 
     
 

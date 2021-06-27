@@ -41,7 +41,7 @@ class App extends Component {
     <header>
       <Header />
     </header>
-   
+
     <main className='App'>
       <Switch>
     <Route exact path='/SignUpForm' component={SignUpForm} />
